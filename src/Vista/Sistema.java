@@ -331,16 +331,17 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(54, 79, 107));
 
         jLabel1.setBackground(new java.awt.Color(54, 79, 107));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Logo.jpg"))); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Logo2.jpg"))); // NOI18N
 
         btnNuevaVenta.setBackground(new java.awt.Color(54, 79, 107));
         btnNuevaVenta.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         btnNuevaVenta.setForeground(new java.awt.Color(255, 255, 255));
         btnNuevaVenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/punto-de-venta1.png"))); // NOI18N
-        btnNuevaVenta.setText("Nueva Venta");
+        btnNuevaVenta.setText("  Nueva Venta ");
         btnNuevaVenta.setBorder(null);
         btnNuevaVenta.setBorderPainted(false);
-        btnNuevaVenta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnNuevaVenta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnNuevaVenta.setFocusable(false);
         btnNuevaVenta.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -360,9 +361,9 @@ public final class Sistema extends javax.swing.JFrame {
         btnClientes.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         btnClientes.setForeground(new java.awt.Color(255, 255, 255));
         btnClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/cliente.png"))); // NOI18N
-        btnClientes.setText("Clientes");
+        btnClientes.setText("   Clientes        ");
         btnClientes.setBorder(null);
-        btnClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnClientes.setFocusable(false);
         btnClientes.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -387,9 +388,9 @@ public final class Sistema extends javax.swing.JFrame {
         btnProveedor.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         btnProveedor.setForeground(new java.awt.Color(240, 240, 240));
         btnProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/repartidor1.png"))); // NOI18N
-        btnProveedor.setText("Proveedor");
+        btnProveedor.setText("   Proveedor    ");
         btnProveedor.setBorder(null);
-        btnProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnProveedor.setFocusable(false);
         btnProveedor.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -409,9 +410,9 @@ public final class Sistema extends javax.swing.JFrame {
         btnProductos.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         btnProductos.setForeground(new java.awt.Color(240, 240, 240));
         btnProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Almacen.png"))); // NOI18N
-        btnProductos.setText("  Productos");
+        btnProductos.setText("   Productos    ");
         btnProductos.setBorder(null);
-        btnProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnProductos.setFocusable(false);
         btnProductos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -434,9 +435,9 @@ public final class Sistema extends javax.swing.JFrame {
         btnVentas.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         btnVentas.setForeground(new java.awt.Color(240, 240, 240));
         btnVentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/carrito.png"))); // NOI18N
-        btnVentas.setText("    Ventas");
+        btnVentas.setText("    Ventas           ");
         btnVentas.setBorder(null);
-        btnVentas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVentas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnVentas.setFocusable(false);
         btnVentas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -456,9 +457,9 @@ public final class Sistema extends javax.swing.JFrame {
         btnConfig.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         btnConfig.setForeground(new java.awt.Color(240, 240, 240));
         btnConfig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/configuracion.png"))); // NOI18N
-        btnConfig.setText(" Configuración");
+        btnConfig.setText("   Configuración");
         btnConfig.setBorder(null);
-        btnConfig.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnConfig.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnConfig.setFocusable(false);
         btnConfig.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -484,9 +485,9 @@ public final class Sistema extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(54, 79, 107));
         jButton1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(240, 240, 240));
-        jButton1.setText("Usuarios");
+        jButton1.setText("Administrar Usuarios");
         jButton1.setBorder(null);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton1.setFocusable(false);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -506,7 +507,7 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnNuevaVenta, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+            .addComponent(btnNuevaVenta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(btnProveedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(btnProductos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(btnVentas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -514,15 +515,11 @@ public final class Sistema extends javax.swing.JFrame {
             .addComponent(LabelVendedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(74, 74, 74)
-                        .addComponent(tipo))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(jLabel1)))
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addGap(74, 74, 74)
+                .addComponent(tipo)
+                .addContainerGap(126, Short.MAX_VALUE))
             .addComponent(btnClientes, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -547,7 +544,7 @@ public final class Sistema extends javax.swing.JFrame {
                 .addComponent(btnConfig, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 77, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 560));
@@ -659,7 +656,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnEliminarventa.setBackground(new java.awt.Color(240, 240, 240));
         btnEliminarventa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/boton-eliminar.png"))); // NOI18N
         btnEliminarventa.setBorder(null);
-        btnEliminarventa.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEliminarventa.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnEliminarventa.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnEliminarventaMouseExited(evt);
@@ -710,7 +707,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnGenerarVenta.setBackground(new java.awt.Color(240, 240, 240));
         btnGenerarVenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/impresora.png"))); // NOI18N
         btnGenerarVenta.setBorder(null);
-        btnGenerarVenta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnGenerarVenta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnGenerarVenta.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnGenerarVentaMouseExited(evt);
@@ -741,7 +738,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnGraficar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/torta.png"))); // NOI18N
         btnGraficar.setBorder(null);
         btnGraficar.setBorderPainted(false);
-        btnGraficar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnGraficar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnGraficar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnGraficarMouseExited(evt);
@@ -851,7 +848,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnGuardarCliente.setBackground(new java.awt.Color(80, 80, 80));
         btnGuardarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/carpeta.png"))); // NOI18N
         btnGuardarCliente.setBorder(null);
-        btnGuardarCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnGuardarCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnGuardarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarClienteActionPerformed(evt);
@@ -861,7 +858,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnEditarCliente.setBackground(new java.awt.Color(80, 80, 80));
         btnEditarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/editar.png"))); // NOI18N
         btnEditarCliente.setBorder(null);
-        btnEditarCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEditarCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnEditarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEditarClienteActionPerformed(evt);
@@ -871,7 +868,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnEliminarCliente.setBackground(new java.awt.Color(80, 80, 80));
         btnEliminarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/boton-eliminar.png"))); // NOI18N
         btnEliminarCliente.setBorder(null);
-        btnEliminarCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEliminarCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnEliminarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarClienteActionPerformed(evt);
@@ -881,7 +878,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnNuevoCliente.setBackground(new java.awt.Color(80, 80, 80));
         btnNuevoCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/registro1.png"))); // NOI18N
         btnNuevoCliente.setBorder(null);
-        btnNuevoCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnNuevoCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnNuevoCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNuevoClienteActionPerformed(evt);
@@ -1037,7 +1034,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnguardarProveedor.setBackground(new java.awt.Color(80, 80, 80));
         btnguardarProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/carpeta.png"))); // NOI18N
         btnguardarProveedor.setBorder(null);
-        btnguardarProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnguardarProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnguardarProveedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnguardarProveedorActionPerformed(evt);
@@ -1047,7 +1044,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnEditarProveedor.setBackground(new java.awt.Color(80, 80, 80));
         btnEditarProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/editar.png"))); // NOI18N
         btnEditarProveedor.setBorder(null);
-        btnEditarProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEditarProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnEditarProveedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEditarProveedorActionPerformed(evt);
@@ -1057,7 +1054,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnNuevoProveedor.setBackground(new java.awt.Color(80, 80, 80));
         btnNuevoProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/registro1.png"))); // NOI18N
         btnNuevoProveedor.setBorder(null);
-        btnNuevoProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnNuevoProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnNuevoProveedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNuevoProveedorActionPerformed(evt);
@@ -1067,7 +1064,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnEliminarProveedor.setBackground(new java.awt.Color(80, 80, 80));
         btnEliminarProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/boton-eliminar.png"))); // NOI18N
         btnEliminarProveedor.setBorder(null);
-        btnEliminarProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEliminarProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnEliminarProveedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarProveedorActionPerformed(evt);
@@ -1247,7 +1244,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnGuardarpro.setBackground(new java.awt.Color(80, 80, 80));
         btnGuardarpro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/carpeta.png"))); // NOI18N
         btnGuardarpro.setBorder(null);
-        btnGuardarpro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnGuardarpro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnGuardarpro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarproActionPerformed(evt);
@@ -1257,7 +1254,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnEditarpro.setBackground(new java.awt.Color(80, 80, 80));
         btnEditarpro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/editar.png"))); // NOI18N
         btnEditarpro.setBorder(null);
-        btnEditarpro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEditarpro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnEditarpro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEditarproActionPerformed(evt);
@@ -1267,7 +1264,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnEliminarPro.setBackground(new java.awt.Color(80, 80, 80));
         btnEliminarPro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/boton-eliminar.png"))); // NOI18N
         btnEliminarPro.setBorder(null);
-        btnEliminarPro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEliminarPro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnEliminarPro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarProActionPerformed(evt);
@@ -1277,7 +1274,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnNuevoPro.setBackground(new java.awt.Color(80, 80, 80));
         btnNuevoPro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/registro1.png"))); // NOI18N
         btnNuevoPro.setBorder(null);
-        btnNuevoPro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnNuevoPro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnNuevoPro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNuevoProActionPerformed(evt);
@@ -1410,7 +1407,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnPdfVentas.setBackground(new java.awt.Color(240, 240, 240));
         btnPdfVentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/pdf.png"))); // NOI18N
         btnPdfVentas.setBorder(null);
-        btnPdfVentas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPdfVentas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnPdfVentas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPdfVentasActionPerformed(evt);
@@ -1480,7 +1477,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnActualizarConfig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/editar.png"))); // NOI18N
         btnActualizarConfig.setText("ACTUALIZAR");
         btnActualizarConfig.setBorder(null);
-        btnActualizarConfig.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnActualizarConfig.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnActualizarConfig.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnActualizarConfigActionPerformed(evt);
@@ -1548,7 +1545,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnIniciar.setForeground(new java.awt.Color(54, 79, 107));
         btnIniciar.setText("Registrar");
         btnIniciar.setBorder(null);
-        btnIniciar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnIniciar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnIniciar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnIniciarMouseExited(evt);
@@ -1649,7 +1646,6 @@ public final class Sistema extends javax.swing.JFrame {
                 "Id", "Nombre", "Correo", "Rol"
             }
         ));
-        TableUsuarios.setRowHeight(20);
         jScrollPane6.setViewportView(TableUsuarios);
 
         jPanel12.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 560, 440));
