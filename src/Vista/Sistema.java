@@ -670,7 +670,7 @@ public final class Sistema extends javax.swing.JFrame {
                 btnEliminarventaActionPerformed(evt);
             }
         });
-        jPanel2.add(btnEliminarventa, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 360, 70, 60));
+        jPanel2.add(btnEliminarventa, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 360, 70, 60));
 
         jLabel8.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(54, 79, 107));
@@ -721,7 +721,7 @@ public final class Sistema extends javax.swing.JFrame {
                 btnGenerarVentaActionPerformed(evt);
             }
         });
-        jPanel2.add(btnGenerarVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 360, 80, 60));
+        jPanel2.add(btnGenerarVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 360, 70, 60));
 
         jLabel10.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(54, 79, 107));
@@ -804,7 +804,7 @@ public final class Sistema extends javax.swing.JFrame {
 
         jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, 580, 440));
 
-        jPanel9.setBackground(new java.awt.Color(80, 80, 80));
+        jPanel9.setBackground(new java.awt.Color(42, 52, 57));
         jPanel9.setForeground(new java.awt.Color(240, 240, 240));
         jPanel9.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
 
@@ -845,7 +845,7 @@ public final class Sistema extends javax.swing.JFrame {
         txtDirecionCliente.setForeground(new java.awt.Color(54, 79, 107));
         txtDirecionCliente.setBorder(null);
 
-        btnGuardarCliente.setBackground(new java.awt.Color(80, 80, 80));
+        btnGuardarCliente.setBackground(new java.awt.Color(42, 52, 57));
         btnGuardarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/carpeta.png"))); // NOI18N
         btnGuardarCliente.setBorder(null);
         btnGuardarCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -855,7 +855,7 @@ public final class Sistema extends javax.swing.JFrame {
             }
         });
 
-        btnEditarCliente.setBackground(new java.awt.Color(80, 80, 80));
+        btnEditarCliente.setBackground(new java.awt.Color(42, 52, 57));
         btnEditarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/editar.png"))); // NOI18N
         btnEditarCliente.setBorder(null);
         btnEditarCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -865,7 +865,7 @@ public final class Sistema extends javax.swing.JFrame {
             }
         });
 
-        btnEliminarCliente.setBackground(new java.awt.Color(80, 80, 80));
+        btnEliminarCliente.setBackground(new java.awt.Color(42, 52, 57));
         btnEliminarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/boton-eliminar.png"))); // NOI18N
         btnEliminarCliente.setBorder(null);
         btnEliminarCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -875,7 +875,7 @@ public final class Sistema extends javax.swing.JFrame {
             }
         });
 
-        btnNuevoCliente.setBackground(new java.awt.Color(80, 80, 80));
+        btnNuevoCliente.setBackground(new java.awt.Color(42, 52, 57));
         btnNuevoCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/registro1.png"))); // NOI18N
         btnNuevoCliente.setBorder(null);
         btnNuevoCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -939,7 +939,7 @@ public final class Sistema extends javax.swing.JFrame {
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGap(180, 180, 180)
                         .addComponent(txtIdCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                         .addComponent(jLabel13)
                         .addGap(17, 17, 17))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
@@ -956,17 +956,15 @@ public final class Sistema extends javax.swing.JFrame {
                     .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtTelefonoCliente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel15)
-                            .addComponent(txtDirecionCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(45, 45, 45)
-                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnGuardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnEliminarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(btnNuevoCliente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnEditarCliente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(txtDirecionCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(45, 45, 45)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(btnEliminarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
+                    .addComponent(btnEditarCliente, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnGuardarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnNuevoCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(29, 29, 29))
         );
 
@@ -1001,7 +999,7 @@ public final class Sistema extends javax.swing.JFrame {
 
         jPanel4.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, 580, 440));
 
-        jPanel10.setBackground(new java.awt.Color(80, 80, 80));
+        jPanel10.setBackground(new java.awt.Color(42, 52, 57));
 
         jLabel17.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(240, 240, 240));
@@ -1031,7 +1029,7 @@ public final class Sistema extends javax.swing.JFrame {
         txtDireccionProveedor.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         txtDireccionProveedor.setBorder(null);
 
-        btnguardarProveedor.setBackground(new java.awt.Color(80, 80, 80));
+        btnguardarProveedor.setBackground(new java.awt.Color(42, 52, 57));
         btnguardarProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/carpeta.png"))); // NOI18N
         btnguardarProveedor.setBorder(null);
         btnguardarProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1041,7 +1039,7 @@ public final class Sistema extends javax.swing.JFrame {
             }
         });
 
-        btnEditarProveedor.setBackground(new java.awt.Color(80, 80, 80));
+        btnEditarProveedor.setBackground(new java.awt.Color(42, 52, 57));
         btnEditarProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/editar.png"))); // NOI18N
         btnEditarProveedor.setBorder(null);
         btnEditarProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1051,7 +1049,7 @@ public final class Sistema extends javax.swing.JFrame {
             }
         });
 
-        btnNuevoProveedor.setBackground(new java.awt.Color(80, 80, 80));
+        btnNuevoProveedor.setBackground(new java.awt.Color(42, 52, 57));
         btnNuevoProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/registro1.png"))); // NOI18N
         btnNuevoProveedor.setBorder(null);
         btnNuevoProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1061,7 +1059,7 @@ public final class Sistema extends javax.swing.JFrame {
             }
         });
 
-        btnEliminarProveedor.setBackground(new java.awt.Color(80, 80, 80));
+        btnEliminarProveedor.setBackground(new java.awt.Color(42, 52, 57));
         btnEliminarProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/boton-eliminar.png"))); // NOI18N
         btnEliminarProveedor.setBorder(null);
         btnEliminarProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1189,7 +1187,7 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 600, 440));
         jPanel5.add(txtIdproducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 25, -1, -1));
 
-        jPanel11.setBackground(new java.awt.Color(80, 80, 80));
+        jPanel11.setBackground(new java.awt.Color(42, 52, 57));
 
         jLabel22.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(240, 240, 240));
@@ -1241,7 +1239,7 @@ public final class Sistema extends javax.swing.JFrame {
             }
         });
 
-        btnGuardarpro.setBackground(new java.awt.Color(80, 80, 80));
+        btnGuardarpro.setBackground(new java.awt.Color(42, 52, 57));
         btnGuardarpro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/carpeta.png"))); // NOI18N
         btnGuardarpro.setBorder(null);
         btnGuardarpro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1251,7 +1249,7 @@ public final class Sistema extends javax.swing.JFrame {
             }
         });
 
-        btnEditarpro.setBackground(new java.awt.Color(80, 80, 80));
+        btnEditarpro.setBackground(new java.awt.Color(42, 52, 57));
         btnEditarpro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/editar.png"))); // NOI18N
         btnEditarpro.setBorder(null);
         btnEditarpro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1261,7 +1259,7 @@ public final class Sistema extends javax.swing.JFrame {
             }
         });
 
-        btnEliminarPro.setBackground(new java.awt.Color(80, 80, 80));
+        btnEliminarPro.setBackground(new java.awt.Color(42, 52, 57));
         btnEliminarPro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/boton-eliminar.png"))); // NOI18N
         btnEliminarPro.setBorder(null);
         btnEliminarPro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1271,7 +1269,7 @@ public final class Sistema extends javax.swing.JFrame {
             }
         });
 
-        btnNuevoPro.setBackground(new java.awt.Color(80, 80, 80));
+        btnNuevoPro.setBackground(new java.awt.Color(42, 52, 57));
         btnNuevoPro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/registro1.png"))); // NOI18N
         btnNuevoPro.setBorder(null);
         btnNuevoPro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1298,30 +1296,32 @@ public final class Sistema extends javax.swing.JFrame {
                             .addComponent(jLabel22))
                         .addGap(29, 29, 29)
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtCodigoPro)
+                            .addComponent(txtCodigoPro, javax.swing.GroupLayout.DEFAULT_SIZE, 164, Short.MAX_VALUE)
                             .addComponent(txtDesPro, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtCantPro))
                         .addContainerGap())
-                    .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(jPanel11Layout.createSequentialGroup()
-                            .addComponent(jLabel25)
-                            .addGap(47, 47, 47)
-                            .addComponent(txtPrecioPro))
-                        .addComponent(jLabel23)
-                        .addGroup(jPanel11Layout.createSequentialGroup()
-                            .addComponent(jLabel26)
-                            .addGap(21, 21, 21)
-                            .addComponent(cbxProveedorPro, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(btnGuardarpro, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnEliminarPro)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnEditarpro)
-                .addGap(32, 32, 32)
-                .addComponent(btnNuevoPro)
-                .addGap(42, 42, 42))
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(btnGuardarpro, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnEliminarPro)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnEditarpro)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnNuevoPro)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel11Layout.createSequentialGroup()
+                                .addComponent(jLabel25)
+                                .addGap(47, 47, 47)
+                                .addComponent(txtPrecioPro))
+                            .addComponent(jLabel23)
+                            .addGroup(jPanel11Layout.createSequentialGroup()
+                                .addComponent(jLabel26)
+                                .addGap(21, 21, 21)
+                                .addComponent(cbxProveedorPro, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))))))
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel39)
@@ -1362,15 +1362,14 @@ public final class Sistema extends javax.swing.JFrame {
                         .addGap(4, 4, 4)
                         .addComponent(jLabel26)
                         .addGap(29, 29, 29)
-                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnNuevoPro, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnGuardarpro, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnGuardarpro, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(cbxProveedorPro, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(20, 20, 20)
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnEliminarPro)
-                            .addComponent(btnEditarpro, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(btnEditarpro, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnNuevoPro, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(23, 23, 23))
         );
 
@@ -1413,7 +1412,7 @@ public final class Sistema extends javax.swing.JFrame {
                 btnPdfVentasActionPerformed(evt);
             }
         });
-        jPanel6.add(btnPdfVentas, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 40, 40));
+        jPanel6.add(btnPdfVentas, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 50, 50));
         jPanel6.add(txtIdVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 46, -1));
 
         jLabel16.setBackground(new java.awt.Color(54, 79, 107));
@@ -1473,8 +1472,9 @@ public final class Sistema extends javax.swing.JFrame {
         txtMensaje.setBorder(null);
         jPanel7.add(txtMensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 400, 30));
 
-        btnActualizarConfig.setBackground(new java.awt.Color(54, 79, 107));
-        btnActualizarConfig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/editar.png"))); // NOI18N
+        btnActualizarConfig.setBackground(new java.awt.Color(240, 240, 240));
+        btnActualizarConfig.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        btnActualizarConfig.setForeground(new java.awt.Color(54, 79, 107));
         btnActualizarConfig.setText("ACTUALIZAR");
         btnActualizarConfig.setBorder(null);
         btnActualizarConfig.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1483,7 +1483,7 @@ public final class Sistema extends javax.swing.JFrame {
                 btnActualizarConfigActionPerformed(evt);
             }
         });
-        jPanel7.add(btnActualizarConfig, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 315, -1, 50));
+        jPanel7.add(btnActualizarConfig, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 315, 100, 50));
 
         jLabel32.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(54, 79, 107));
@@ -1511,6 +1511,7 @@ public final class Sistema extends javax.swing.JFrame {
 
         jPanel7.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 420, 310));
 
+        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Logo.jpg"))); // NOI18N
         jLabel21.setToolTipText("");
         jPanel7.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 70, 420, 310));
@@ -1519,7 +1520,7 @@ public final class Sistema extends javax.swing.JFrame {
 
         jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel13.setBackground(new java.awt.Color(80, 80, 80));
+        jPanel13.setBackground(new java.awt.Color(42, 52, 57));
 
         jLabel34.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel34.setForeground(new java.awt.Color(240, 240, 240));
