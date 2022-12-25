@@ -11,7 +11,7 @@ public class Conexion {
     public Connection getConnection() {
         try {
             String myBD = "jdbc:mysql://localhost:3306/"
-                    + "fulanito_final?serverTimezone=UTC";
+                    + "java_prueba1?serverTimezone=UTC";
             con = DriverManager.getConnection(myBD, "root", "");
             return con;
         } catch (SQLException e) {
