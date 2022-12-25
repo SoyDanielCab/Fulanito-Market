@@ -675,7 +675,6 @@
             </Component>
             <Component class="javax.swing.JTextField" name="txtRucVenta">
               <Properties>
-                <Property name="editable" type="boolean" value="false"/>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f0" green="f0" red="f0" type="rgb"/>
                 </Property>
@@ -701,7 +700,6 @@
             </Component>
             <Component class="javax.swing.JTextField" name="txtNombreClienteventa">
               <Properties>
-                <Property name="editable" type="boolean" value="false"/>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f0" green="f0" red="f0" type="rgb"/>
                 </Property>
@@ -1852,14 +1850,13 @@
                               <Component id="txtPrecioPro" min="-2" pref="30" max="-2" attributes="0"/>
                               <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel26" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="cbxProveedorPro" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="114" max="32767" attributes="0"/>
+                                  <EmptySpace pref="132" max="32767" attributes="0"/>
                                   <Component id="btnGuardarpro" min="-2" pref="40" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">

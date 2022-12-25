@@ -681,7 +681,6 @@ public final class Sistema extends javax.swing.JFrame {
         jLabel9.setText("Nombre:");
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 352, -1, -1));
 
-        txtRucVenta.setEditable(false);
         txtRucVenta.setBackground(new java.awt.Color(240, 240, 240));
         txtRucVenta.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         txtRucVenta.setForeground(new java.awt.Color(54, 79, 107));
@@ -696,7 +695,6 @@ public final class Sistema extends javax.swing.JFrame {
         });
         jPanel2.add(txtRucVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 375, 116, 30));
 
-        txtNombreClienteventa.setEditable(false);
         txtNombreClienteventa.setBackground(new java.awt.Color(240, 240, 240));
         txtNombreClienteventa.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         txtNombreClienteventa.setForeground(new java.awt.Color(54, 79, 107));
@@ -1324,13 +1322,12 @@ public final class Sistema extends javax.swing.JFrame {
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtPrecioPro, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel25))
-                .addGap(18, 18, 18)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel26)
                             .addComponent(cbxProveedorPro, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
                         .addComponent(btnGuardarpro, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
