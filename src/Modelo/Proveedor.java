@@ -6,6 +6,7 @@ public class Proveedor {
     private String ruc;
     private String nombre;
     private String telefono;
+    private String email;
     private String direccion;
     
     public Proveedor(){
@@ -17,7 +18,16 @@ public class Proveedor {
         this.ruc = ruc;
         this.nombre = nombre;
         this.telefono = telefono;
+        this.email = email;
         this.direccion = direccion;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public int getId() {
@@ -59,5 +69,6 @@ public class Proveedor {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+
     
 }

@@ -14,14 +14,15 @@ public class ProveedorDao {
     PreparedStatement ps;
     ResultSet rs;
     public boolean RegistrarProveedor(Proveedor pr){
-        String sql = "INSERT INTO proveedor(ruc, nombre, telefono, direccion) VALUES (?,?,?,?)";
+        String sql = "INSERT INTO proveedor(ruc, nombre, telefono, email, direccion) VALUES (?,?,?,?,?)";
         try {
            con = cn.getConnection();
            ps = con.prepareStatement(sql);
            ps.setString(1, pr.getRuc());
            ps.setString(2, pr.getNombre());
            ps.setString(3, pr.getTelefono());
-           ps.setString(4, pr.getDireccion());
+           ps.setString(4, pr.getEmail());
+           ps.setString(5, pr.getDireccion());
            ps.execute();
            return true;
         } catch (SQLException e) {
@@ -49,6 +50,7 @@ public class ProveedorDao {
                 pr.setRuc(rs.getString("ruc"));
                 pr.setNombre(rs.getString("nombre"));
                 pr.setTelefono(rs.getString("telefono"));
+                pr.setEmail(rs.getString("Email"));
                 pr.setDireccion(rs.getString("direccion"));
                 Listapr.add(pr);
             }
@@ -80,15 +82,16 @@ public class ProveedorDao {
     }
     
     public boolean ModificarProveedor(Proveedor pr){
-        String sql = "UPDATE proveedor SET ruc=?, nombre=?, telefono=?, direccion=? WHERE id=?";
+        String sql = "UPDATE proveedor SET ruc=?, nombre=?, telefono=?, email=?, direccion=? WHERE id=?";
         try {
             con = cn.getConnection();
             ps = con.prepareStatement(sql);
             ps.setString(1, pr.getRuc());
             ps.setString(2, pr.getNombre());
             ps.setString(3, pr.getTelefono());
-            ps.setString(4, pr.getDireccion());
-            ps.setInt(5, pr.getId());
+            ps.setString(4, pr.getEmail());
+            ps.setString(5, pr.getDireccion());
+            ps.setInt(6, pr.getId());
             ps.execute();
             return true;
         } catch (SQLException e) {
