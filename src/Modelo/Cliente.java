@@ -11,6 +11,7 @@ package Modelo;
  */
 public class Cliente {
     private int id;
+    private String cp;
     private String dni;
     private String nombre;
     private String telefono;
@@ -20,8 +21,9 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(int id, String dni, String nombre, String telefono, String email, String direccion) {
+    public Cliente(int id, String cp, String dni, String nombre, String telefono, String email, String direccion) {
         this.id = id;
+        this.cp = cp;
         this.dni = dni;
         this.nombre = nombre;
         this.telefono = telefono;
@@ -36,6 +38,15 @@ public class Cliente {
     public void setId(int id) {
         this.id = id;
     }
+    
+    public String getCp() {
+        return cp;
+    }
+
+    public void setCp(String cp) {
+        this.cp = cp;
+    }
+
 
     public String getDni() {
         return dni;

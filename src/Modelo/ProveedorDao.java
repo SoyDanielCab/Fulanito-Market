@@ -14,7 +14,7 @@ public class ProveedorDao {
     PreparedStatement ps;
     ResultSet rs;
     public boolean RegistrarProveedor(Proveedor pr){
-        String sql = "INSERT INTO proveedor(ruc, nombre, telefono, email, direccion) VALUES (?,?,?,?,?)";
+        String sql = "INSERT INTO proveedor(ruc, nombre, telefono, email, direccion, cp) VALUES (?,?,?,?,?,?)";
         try {
            con = cn.getConnection();
            ps = con.prepareStatement(sql);
@@ -23,6 +23,7 @@ public class ProveedorDao {
            ps.setString(3, pr.getTelefono());
            ps.setString(4, pr.getEmail());
            ps.setString(5, pr.getDireccion());
+           ps.setString(6, pr.getCp());
            ps.execute();
            return true;
         } catch (SQLException e) {
@@ -52,6 +53,7 @@ public class ProveedorDao {
                 pr.setTelefono(rs.getString("telefono"));
                 pr.setEmail(rs.getString("Email"));
                 pr.setDireccion(rs.getString("direccion"));
+                pr.setCp(rs.getString("cp"));
                 Listapr.add(pr);
             }
             
@@ -82,7 +84,7 @@ public class ProveedorDao {
     }
     
     public boolean ModificarProveedor(Proveedor pr){
-        String sql = "UPDATE proveedor SET ruc=?, nombre=?, telefono=?, email=?, direccion=? WHERE id=?";
+        String sql = "UPDATE proveedor SET ruc=?, nombre=?, telefono=?, email=?, direccion=?, cp=? WHERE id=?";
         try {
             con = cn.getConnection();
             ps = con.prepareStatement(sql);
@@ -91,7 +93,8 @@ public class ProveedorDao {
             ps.setString(3, pr.getTelefono());
             ps.setString(4, pr.getEmail());
             ps.setString(5, pr.getDireccion());
-            ps.setInt(6, pr.getId());
+            ps.setString(6, pr.getCp());
+            ps.setInt(7, pr.getId());
             ps.execute();
             return true;
         } catch (SQLException e) {

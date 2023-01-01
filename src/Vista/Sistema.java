@@ -19,7 +19,7 @@ import Modelo.ProveedorDao;
 import Modelo.Venta;
 import Modelo.VentaDao;
 import Modelo.login;
-import Reportes.Grafico;
+
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -81,7 +81,7 @@ public final class Sistema extends javax.swing.JFrame {
     public void ListarCliente() {
         List<Cliente> ListarCl = client.ListarCliente();
         modelo = (DefaultTableModel) TableCliente.getModel();
-        Object[] ob = new Object[6];
+        Object[] ob = new Object[7];
         for (int i = 0; i < ListarCl.size(); i++) {
             ob[0] = ListarCl.get(i).getId();
             ob[1] = ListarCl.get(i).getDni();
@@ -89,6 +89,7 @@ public final class Sistema extends javax.swing.JFrame {
             ob[3] = ListarCl.get(i).getTelefono();
             ob[4] = ListarCl.get(i).getEmail();
             ob[5] = ListarCl.get(i).getDireccion();
+            ob[6] = ListarCl.get(i).getCp();
             modelo.addRow(ob);
         }
         TableCliente.setModel(modelo);
@@ -98,7 +99,7 @@ public final class Sistema extends javax.swing.JFrame {
     public void ListarProveedor() {
         List<Proveedor> ListarPr = PrDao.ListarProveedor();
         modelo = (DefaultTableModel) TableProveedor.getModel();
-        Object[] ob = new Object[6];
+        Object[] ob = new Object[7];
         for (int i = 0; i < ListarPr.size(); i++) {
             ob[0] = ListarPr.get(i).getId();
             ob[1] = ListarPr.get(i).getRuc();
@@ -106,6 +107,7 @@ public final class Sistema extends javax.swing.JFrame {
             ob[3] = ListarPr.get(i).getTelefono();
             ob[4] = ListarPr.get(i).getEmail();
             ob[5] = ListarPr.get(i).getDireccion();
+            ob[6] = ListarPr.get(i).getCp();
             modelo.addRow(ob);
         }
         TableProveedor.setModel(modelo);
@@ -252,6 +254,8 @@ public final class Sistema extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         txtEmailCliente = new javax.swing.JTextField();
+        jLabel42 = new javax.swing.JLabel();
+        txtCPCliente = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         TableProveedor = new javax.swing.JTable();
@@ -272,6 +276,8 @@ public final class Sistema extends javax.swing.JFrame {
         jLabel38 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
         txtEmailProveedor = new javax.swing.JTextField();
+        jLabel43 = new javax.swing.JLabel();
+        txtCpProveedor = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
         TableProducto = new javax.swing.JTable();
@@ -767,7 +773,7 @@ public final class Sistema extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "RFC", "NOMBRE", "TELÉFONO", "EMAIL", "DIRECCIÓN"
+                "ID", "RFC", "NOMBRE", "TELÉFONO", "EMAIL", "DIRECCIÓN", "CP"
             }
         ));
         TableCliente.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -879,6 +885,14 @@ public final class Sistema extends javax.swing.JFrame {
         txtEmailCliente.setForeground(new java.awt.Color(54, 79, 107));
         txtEmailCliente.setBorder(null);
 
+        jLabel42.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel42.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel42.setText("CP:");
+
+        txtCPCliente.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        txtCPCliente.setForeground(new java.awt.Color(54, 79, 107));
+        txtCPCliente.setBorder(null);
+
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
@@ -901,6 +915,10 @@ public final class Sistema extends javax.swing.JFrame {
                         .addGap(25, 25, 25))
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel9Layout.createSequentialGroup()
+                                .addComponent(jLabel42)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txtCPCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel9Layout.createSequentialGroup()
                                 .addComponent(jLabel15)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
@@ -952,9 +970,13 @@ public final class Sistema extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtDirecionCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel15))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCPCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel42))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addComponent(txtIdCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(btnEliminarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
                     .addComponent(btnEditarCliente, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -975,7 +997,7 @@ public final class Sistema extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "RFC", "NOMBRE", "TELÉFONO", "CORREO", "DIRECCIÓN"
+                "ID", "RFC", "NOMBRE", "TELÉFONO", "CORREO", "DIRECCIÓN", "CP"
             }
         ));
         TableProveedor.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1081,6 +1103,13 @@ public final class Sistema extends javax.swing.JFrame {
         txtEmailProveedor.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         txtEmailProveedor.setBorder(null);
 
+        jLabel43.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel43.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel43.setText("CP:");
+
+        txtCpProveedor.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        txtCpProveedor.setBorder(null);
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
@@ -1088,20 +1117,6 @@ public final class Sistema extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(btnguardarProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnEliminarProveedor, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnEditarProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnNuevoProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(txtIdProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(99, 99, 99))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1110,14 +1125,31 @@ public final class Sistema extends javax.swing.JFrame {
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addComponent(jLabel38)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(txtIdProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addGap(35, 35, 35)
+                                .addComponent(btnguardarProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnEliminarProveedor, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnEditarProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnNuevoProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(28, 28, 28))
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel18)
                             .addComponent(jLabel19)
                             .addComponent(jLabel41)
-                            .addComponent(jLabel20))
+                            .addComponent(jLabel20)
+                            .addComponent(jLabel43, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(12, 12, 12)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtCpProveedor, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtEmailProveedor, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtNombreproveedor)
                             .addComponent(txtTelefonoProveedor)
@@ -1149,9 +1181,13 @@ public final class Sistema extends javax.swing.JFrame {
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtDireccionProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel20))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCpProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel43))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addComponent(txtIdProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnEliminarProveedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnguardarProveedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1910,12 +1946,13 @@ public final class Sistema extends javax.swing.JFrame {
         if ("".equals(txtIdProveedor.getText())) {
             JOptionPane.showMessageDialog(null, "Seleecione una fila");
         } else {
-            if (!"".equals(txtRucProveedor.getText()) || !"".equals(txtNombreproveedor.getText()) || !"".equals(txtTelefonoProveedor.getText()) || !"".equals(txtEmailProveedor.getText()) || !"".equals(txtDireccionProveedor.getText())) {
+            if (!"".equals(txtRucProveedor.getText()) || !"".equals(txtNombreproveedor.getText()) || !"".equals(txtTelefonoProveedor.getText()) || !"".equals(txtEmailProveedor.getText()) || !"".equals(txtDireccionProveedor.getText()) || !"".equals(txtCpProveedor.getText())) {
                 pr.setRuc(txtRucProveedor.getText());
                 pr.setNombre(txtNombreproveedor.getText());
                 pr.setTelefono(txtTelefonoProveedor.getText());
                 pr.setEmail(txtEmailProveedor.getText());
                 pr.setDireccion(txtDireccionProveedor.getText());
+                pr.setCp(txtCpProveedor.getText());
                 pr.setId(Integer.parseInt(txtIdProveedor.getText()));
                 PrDao.ModificarProveedor(pr);
                 JOptionPane.showMessageDialog(null, "Proveedor Modificado");
@@ -1931,12 +1968,14 @@ public final class Sistema extends javax.swing.JFrame {
 
     private void btnguardarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarProveedorActionPerformed
         // TODO add your handling code here:
-        if (!"".equals(txtRucProveedor.getText()) || !"".equals(txtNombreproveedor.getText()) || !"".equals(txtTelefonoProveedor.getText()) || !"".equals(txtEmailProveedor.getText()) || !"".equals(txtDireccionProveedor.getText())) {
+        if (!"".equals(txtRucProveedor.getText()) || !"".equals(txtNombreproveedor.getText()) || !"".equals(txtTelefonoProveedor.getText()) || !"".equals(txtEmailProveedor.getText()) || !"".equals(txtDireccionProveedor.getText()) || !"".equals(txtCpProveedor.getText())) {
             pr.setRuc(txtRucProveedor.getText());
             pr.setNombre(txtNombreproveedor.getText());
             pr.setTelefono(txtTelefonoProveedor.getText());
             pr.setEmail(txtEmailProveedor.getText());
             pr.setDireccion(txtDireccionProveedor.getText());
+            pr.setCp(txtCpProveedor.getText());
+            
             PrDao.RegistrarProveedor(pr);
             JOptionPane.showMessageDialog(null, "Proveedor Registrado");
             LimpiarTable();
@@ -1998,6 +2037,7 @@ public final class Sistema extends javax.swing.JFrame {
                 cl.setTelefono(txtTelefonoCliente.getText());
                 cl.setEmail(txtEmailCliente.getText());
                 cl.setDireccion(txtDirecionCliente.getText());
+                cl.setCp(txtCPCliente.getText());
                 cl.setId(Integer.parseInt(txtIdCliente.getText()));
                 client.ModificarCliente(cl);
                 JOptionPane.showMessageDialog(null, "Cliente Modificado");
@@ -2012,12 +2052,15 @@ public final class Sistema extends javax.swing.JFrame {
 
     private void btnGuardarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarClienteActionPerformed
         // TODO add your handling code here:
-        if (!"".equals(txtDniCliente.getText()) || !"".equals(txtNombreCliente.getText()) || !"".equals(txtTelefonoCliente.getText()) || !"".equals(txtDirecionCliente.getText()) || !"".equals(txtEmailCliente.getText()) ) {
+        if (!"".equals(txtDniCliente.getText()) || !"".equals(txtNombreCliente.getText()) || !"".equals(txtTelefonoCliente.getText()) || !"".equals(txtDirecionCliente.getText()) || !"".equals(txtEmailCliente.getText()) || !"".equals(txtCPCliente.getText()) ) {
+           
             cl.setDni(txtDniCliente.getText());
             cl.setNombre(txtNombreCliente.getText());
             cl.setTelefono(txtTelefonoCliente.getText());
             cl.setEmail(txtEmailCliente.getText());
             cl.setDireccion(txtDirecionCliente.getText());
+            cl.setDireccion(txtCPCliente.getText());
+            //txtCPCliente
             client.RegistrarCliente(cl);
             JOptionPane.showMessageDialog(null, "Cliente Registrado");
             LimpiarTable();
@@ -2408,6 +2451,8 @@ public final class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -2447,11 +2492,13 @@ public final class Sistema extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel tipo;
+    private javax.swing.JTextField txtCPCliente;
     private javax.swing.JTextField txtCantPro;
     private javax.swing.JTextField txtCantidadVenta;
     private javax.swing.JTextField txtCodigoPro;
     private javax.swing.JTextField txtCodigoVenta;
     private javax.swing.JTextField txtCorreo;
+    private javax.swing.JTextField txtCpProveedor;
     private javax.swing.JTextField txtDesPro;
     private javax.swing.JTextField txtDescripcionVenta;
     private javax.swing.JTextField txtDireccionConfig;
@@ -2491,6 +2538,7 @@ public final class Sistema extends javax.swing.JFrame {
         txtTelefonoCliente.setText("");
         txtEmailCliente.setText("");
         txtDirecionCliente.setText("");
+        txtCPCliente.setText("");
     }
 
     private void LimpiarProveedor() {
@@ -2500,6 +2548,7 @@ public final class Sistema extends javax.swing.JFrame {
         txtTelefonoProveedor.setText("");
         txtEmailProveedor.setText("");
         txtDireccionProveedor.setText("");
+        txtCpProveedor.setText("");
     }
 
     private void LimpiarProductos() {

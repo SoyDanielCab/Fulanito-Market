@@ -3,6 +3,7 @@ package Modelo;
 
 public class Proveedor {
     private int id;
+    private String cp;
     private String ruc;
     private String nombre;
     private String telefono;
@@ -13,8 +14,9 @@ public class Proveedor {
         
     }
 
-    public Proveedor(int id, String ruc, String nombre, String telefono, String direccion) {
+    public Proveedor(int id, String cp, String ruc, String nombre, String telefono, String direccion) {
         this.id = id;
+        this.cp = cp;
         this.ruc = ruc;
         this.nombre = nombre;
         this.telefono = telefono;
@@ -37,6 +39,15 @@ public class Proveedor {
     public void setId(int id) {
         this.id = id;
     }
+    
+    public String getCp() {
+        return cp;
+    }
+
+    public void setCp(String cp) {
+        this.cp = cp;
+    }
+
 
     public String getRuc() {
         return ruc;
