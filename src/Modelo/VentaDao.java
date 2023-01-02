@@ -184,7 +184,7 @@ public class VentaDao {
                 rs = ps.executeQuery();
                 if (rs.next()) {
                     mensaje = rs.getString("mensaje");
-                    Encabezado.addCell("Ruc:    " + rs.getString("ruc") + "\nNombre: " + rs.getString("nombre") + "\nTeléfono: " + rs.getString("telefono") + "\nDirección: " + rs.getString("direccion") + "\n\n");
+                    Encabezado.addCell("RFC:    " + rs.getString("ruc") + "\nNombre: " + rs.getString("nombre") + "\nTeléfono: " + rs.getString("telefono") + "\nDirección: " + rs.getString("direccion") + "\n\n");
                 }
             } catch (SQLException e) {
                 System.out.println(e.toString());
@@ -279,7 +279,7 @@ public class VentaDao {
             doc.add(info);
             Paragraph firma = new Paragraph();
             firma.add(Chunk.NEWLINE);
-            firma.add("Cancelacion \n\n");
+            //firma.add("Cancelacion \n\n");
             firma.add("------------------------------------\n");
             firma.add("Firma \n");
             firma.setAlignment(Element.ALIGN_CENTER);
