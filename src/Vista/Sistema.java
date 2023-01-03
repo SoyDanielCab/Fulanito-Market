@@ -196,6 +196,7 @@ public final class Sistema extends javax.swing.JFrame {
         LabelVendedor = new javax.swing.JLabel();
         tipo = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel47 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -234,6 +235,9 @@ public final class Sistema extends javax.swing.JFrame {
         jSeparator10 = new javax.swing.JSeparator();
         jSeparator11 = new javax.swing.JSeparator();
         jSeparator12 = new javax.swing.JSeparator();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         TableCliente = new javax.swing.JTable();
@@ -555,10 +559,14 @@ public final class Sistema extends javax.swing.JFrame {
                 .addComponent(btnConfig, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 67, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 560));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 570));
+
+        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/encabezado.png"))); // NOI18N
+        jLabel47.setText("jLabel47");
+        getContentPane().add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, -120, 880, 310));
 
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -568,8 +576,8 @@ public final class Sistema extends javax.swing.JFrame {
         jLabel3.setBackground(new java.awt.Color(54, 79, 107));
         jLabel3.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(54, 79, 107));
-        jLabel3.setText("Código:");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
+        jLabel3.setText("Agrege ID Cliente");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
 
         jLabel4.setBackground(new java.awt.Color(54, 79, 107));
         jLabel4.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
@@ -662,7 +670,7 @@ public final class Sistema extends javax.swing.JFrame {
             TableVenta.getColumnModel().getColumn(4).setPreferredWidth(60);
         }
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 843, 191));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 843, 170));
 
         btnEliminarventa.setBackground(new java.awt.Color(240, 240, 240));
         btnEliminarventa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/boton-eliminar.png"))); // NOI18N
@@ -762,6 +770,24 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel2.add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 80, 20));
         jPanel2.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 80, 20));
         jPanel2.add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, 160, 20));
+
+        jLabel44.setBackground(new java.awt.Color(54, 79, 107));
+        jLabel44.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(54, 79, 107));
+        jLabel44.setText("Código:");
+        jPanel2.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
+
+        jLabel45.setBackground(new java.awt.Color(54, 79, 107));
+        jLabel45.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(54, 79, 107));
+        jLabel45.setText("Código:");
+        jPanel2.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
+
+        jLabel46.setBackground(new java.awt.Color(54, 79, 107));
+        jLabel46.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(54, 79, 107));
+        jLabel46.setText("Agrege Código Producto");
+        jPanel2.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 20));
 
         jTabbedPane1.addTab("1", jPanel2);
 
@@ -1699,7 +1725,7 @@ public final class Sistema extends javax.swing.JFrame {
             .addGap(0, 570, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1080, 570));
+        getContentPane().add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1080, 570));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -2453,6 +2479,10 @@ public final class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
