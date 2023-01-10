@@ -17,8 +17,8 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         this.setLocationRelativeTo(null);
-        txtCorreo.setText("User1");
-        txtPass.setText("123");
+        txtCorreo.setText("");
+        txtPass.setText("");
     }
     public void validar(){
         String correo = txtCorreo.getText();
@@ -74,7 +74,7 @@ public class Login extends javax.swing.JFrame {
 
         txtCorreo.setBackground(new java.awt.Color(240, 240, 240));
         txtCorreo.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        txtCorreo.setForeground(new java.awt.Color(153, 153, 153));
+        txtCorreo.setForeground(new java.awt.Color(42, 52, 57));
         txtCorreo.setText("Agregar Usuario");
         txtCorreo.setBorder(null);
         txtCorreo.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +88,7 @@ public class Login extends javax.swing.JFrame {
         jLabel4.setText("Contraseña");
 
         txtPass.setBackground(new java.awt.Color(240, 240, 240));
-        txtPass.setForeground(new java.awt.Color(153, 153, 153));
+        txtPass.setForeground(new java.awt.Color(42, 52, 57));
         txtPass.setText("contraseña");
         txtPass.setBorder(null);
 
